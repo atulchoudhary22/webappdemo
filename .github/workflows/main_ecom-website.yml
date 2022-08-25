@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'ecom-website'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_993B1ACA07C7469E868215CF8DC41E6F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2E4B94BC2FBB4646B87201DCDB285CB2 }}
           package: .
